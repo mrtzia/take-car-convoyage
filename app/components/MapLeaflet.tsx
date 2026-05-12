@@ -38,6 +38,12 @@ export default function MapLeaflet() {
 
     mapRef.current = map;
 
+    // Force la map à se redimensionner quand le conteneur change
+    const resizeObserver = new ResizeObserver(() => {
+      if (mapRef.current) mapRef.current.resize();
+    });
+    resizeObserver.observe(containerRef.current);
+
     map.on("load", async () => {
       if (cancelled) return;
 
@@ -271,9 +277,10 @@ export default function MapLeaflet() {
 
     return () => {
       cancelled = true;
+      resizeObserver.disconnect();
       if (mapRef.current) { mapRef.current.remove(); mapRef.current = null; }
     };
   }, []);
 
-  return <div ref={containerRef} className="w-full h-full" style={{ minHeight: "500px" }} />;
+  return <div ref={containerRef} className="absolute inset-0 w-full h-full" style={{ minHeight: "500px" }} />;
 }
