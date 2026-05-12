@@ -74,7 +74,8 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="section-inner md:hidden bg-[#111111] border-t border-white/10 py-4 flex flex-col gap-3"
+            className="section-inner md:hidden bg-[#111111] border-t border-white/10 flex flex-col gap-3"
+            style={{ paddingTop: "20px", paddingBottom: "40px", height: "auto" }}
           >
             {links.map((l) => (
               <a
@@ -90,7 +91,7 @@ export default function Navbar() {
               href="#devis"
               onClick={() => setMenuOpen(false)}
               className="bg-white text-[#111111] text-sm font-semibold rounded-full text-center block"
-              style={{ padding: "10px 16px", marginLeft: "4px", marginRight: "4px", marginBottom: "8px" }}
+              style={{ padding: "10px 16px", marginLeft: "4px", marginRight: "4px", marginTop: "12px" }}
             >
               Demander un devis
             </a>
