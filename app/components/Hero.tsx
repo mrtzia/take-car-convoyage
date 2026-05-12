@@ -31,7 +31,7 @@ export default function Hero() {
       <div className="section-inner max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2">
 
         {/* ── Left col ── */}
-        <div className="flex flex-col justify-center py-10 md:pl-6 md:pr-14 md:py-14" style={{ minHeight: "calc(100vh - 108px)" }}>
+        <div className="flex flex-col justify-center py-14 md:pl-6 md:pr-14 md:py-16" style={{ minHeight: "560px" }}>
 
           {/* HAUT : badge + titre + phrase + bouton */}
           <div>
@@ -48,9 +48,9 @@ export default function Hero() {
             <motion.h1
               initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.06 }}
               style={{
-                fontSize: "clamp(2.4rem, 4.5vw, 3.8rem)",
+                fontSize: "clamp(1.9rem, 3.6vw, 3rem)",
                 fontWeight: 700,
-                lineHeight: 1.08,
+                lineHeight: 1.1,
                 letterSpacing: "-0.02em",
                 color: "#111111",
                 marginBottom: "24px",
