@@ -10,7 +10,7 @@ export default function Hero() {
 
       {/* Sub-nav */}
       <div className="border-b border-black/8">
-        <div className="section-inner max-w-7xl mx-auto flex items-center gap-6 py-2 overflow-x-auto whitespace-nowrap">
+        <div className="max-w-7xl mx-auto flex items-center justify-center gap-4 py-2 flex-wrap px-4">
           {[
             { label: "Take Car Convoyage", href: "#hero" },
             { label: "Services", href: "#services" },
@@ -19,7 +19,7 @@ export default function Hero() {
             { label: "Contact", href: "#contact" },
           ].map((item) => (
             <a key={item.label} href={item.href}
-              className="text-xs text-[#111111]/45 hover:text-[#111111] transition-colors shrink-0">
+              className="text-[10px] text-[#111111]/45 hover:text-[#111111] transition-colors">
               {item.label}
             </a>
           ))}
