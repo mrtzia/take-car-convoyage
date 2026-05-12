@@ -158,9 +158,9 @@ export default function HowItWorks() {
                   onClick={() => setActiveStep(i)}
                   className="cursor-pointer rounded-2xl p-6 transition-shadow duration-200"
                   style={{
-                    backgroundColor: isActive ? "white" : "transparent",
-                    border: isActive ? "1px solid rgba(17,17,17,0.06)" : "1px solid transparent",
-                    boxShadow: i === activeStep ? "0 4px 24px rgba(17,17,17,0.07)" : "none",
+                    backgroundColor: "transparent",
+                    border: "none",
+                    boxShadow: "none",
                   }}
                 >
                   <h3 className="text-sm font-semibold text-[#111111] mb-3 leading-snug">{step.title}</h3>
@@ -213,9 +213,9 @@ export default function HowItWorks() {
                   <div
                     className="rounded-2xl p-5 flex-1 transition-all duration-300"
                     style={{
-                      backgroundColor: isActive ? "white" : "transparent",
-                      border: isActive ? "1px solid rgba(17,17,17,0.06)" : "1px solid transparent",
-                      boxShadow: isCurrent ? "0 4px 24px rgba(17,17,17,0.07)" : "none",
+                      backgroundColor: "transparent",
+                      border: "none",
+                      boxShadow: "none",
                     }}
                   >
                     <div className="flex items-center gap-2 mb-2">
