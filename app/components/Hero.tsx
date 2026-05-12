@@ -10,7 +10,7 @@ export default function Hero() {
 
       {/* Sub-nav */}
       <div className="border-b border-black/8" style={{ overflowX: "hidden" }}>
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "6px 16px", gap: "8px" }}>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "4px 16px", gap: "8px" }}>
           {[
             { label: "Take Car Convoyage", href: "#hero" },
             { label: "Services", href: "#services" },
@@ -37,12 +37,12 @@ export default function Hero() {
           <div>
             <motion.div
               initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}
-              style={{ display: "flex", alignItems: "center", gap: "6px", marginBottom: "24px" }}
+              style={{ display: "flex", alignItems: "center", gap: "6px", marginBottom: "16px", marginTop: "8px" }}
             >
               <svg width="14" height="14" viewBox="0 0 24 24" fill="#111111">
                 <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
               </svg>
-              <span style={{ fontSize: "14px", fontWeight: 600, color: "#111111" }}>Bretagne, FR</span>
+              <span style={{ fontSize: "12px", fontWeight: 600, color: "#111111" }}>Bretagne, FR</span>
             </motion.div>
 
             <motion.h1
