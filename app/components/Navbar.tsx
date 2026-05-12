@@ -53,9 +53,11 @@ export default function Navbar() {
 
         {/* Mobile burger */}
         <button
-          className="md:hidden p-2"
+          className="md:hidden p-3 cursor-pointer"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Menu"
+          type="button"
+          style={{ touchAction: "manipulation", WebkitTapHighlightColor: "transparent" }}
         >
           <div className="w-5 flex flex-col gap-[5px]">
             <span className={`h-px bg-white transition-all duration-200 ${menuOpen ? "rotate-45 translate-y-[6px]" : ""}`} />
