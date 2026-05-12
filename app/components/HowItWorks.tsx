@@ -105,7 +105,7 @@ export default function HowItWorks() {
     <div
       ref={containerRef}
       id="comment"
-      style={{ height: `${steps.length * 90}vh`, position: "relative" }}
+      style={{ height: `${steps.length * 100}vh`, position: "relative" }}
     >
 
       {/* Sticky viewport */}
