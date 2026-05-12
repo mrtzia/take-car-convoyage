@@ -27,11 +27,22 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Main grid */}
-      <div className="section-inner max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2">
+      {/* Main grid — full-bleed split screen */}
+      <div
+        className="grid grid-cols-1 md:grid-cols-2"
+        style={{ minHeight: "calc(100vh - 108px)" }}
+      >
 
         {/* ── Left col ── */}
-        <div className="flex flex-col justify-center py-14 md:pl-6 md:pr-14 md:py-16" style={{ minHeight: "560px" }}>
+        <div
+          className="flex flex-col justify-center"
+          style={{
+            paddingLeft: "var(--main-padding)",
+            paddingRight: "var(--main-padding)",
+            paddingTop: "56px",
+            paddingBottom: "56px",
+          }}
+        >
 
           {/* HAUT : badge + titre + phrase + bouton */}
           <div>
