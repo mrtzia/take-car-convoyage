@@ -31,7 +31,7 @@ export default function Hero() {
       <div className="section-inner max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2">
 
         {/* ── Left col ── */}
-        <div className="flex flex-col justify-between py-10 md:pl-6 md:pr-14 md:py-14" style={{ minHeight: "calc(100vh - 108px)" }}>
+        <div className="flex flex-col justify-center py-10 md:pl-6 md:pr-14 md:py-14" style={{ minHeight: "calc(100vh - 108px)" }}>
 
           {/* HAUT : badge + titre + phrase + bouton */}
           <div>
@@ -83,23 +83,6 @@ export default function Hero() {
               </a>
             </motion.div>
           </div>
-
-          {/* BAS : stats */}
-          <motion.div
-            initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.32 }}
-            style={{ borderTop: "1px solid rgba(17,17,17,0.06)", paddingTop: "28px", display: "flex", gap: "40px" }}
-          >
-            {[
-              { value: "100%", label: "Véhicules assurés" },
-              { value: "+500", label: "Missions réalisées" },
-              { value: "24h",  label: "Réponse devis" },
-            ].map((s) => (
-              <div key={s.label}>
-                <div style={{ fontSize: "18px", fontWeight: 700, color: "#111111" }}>{s.value}</div>
-                <div style={{ fontSize: "10px", color: "rgba(17,17,17,0.35)", marginTop: "2px", textTransform: "uppercase", letterSpacing: "0.08em" }}>{s.label}</div>
-              </div>
-            ))}
-          </motion.div>
 
         </div>
 
