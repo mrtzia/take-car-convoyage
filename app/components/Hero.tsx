@@ -10,7 +10,7 @@ export default function Hero() {
 
       {/* Sub-nav */}
       <div className="border-b border-black/8" style={{ overflowX: "hidden" }}>
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "10px 16px", gap: "8px" }}>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "6px 16px", gap: "8px" }}>
           {[
             { label: "Take Car Convoyage", href: "#hero" },
             { label: "Services", href: "#services" },
