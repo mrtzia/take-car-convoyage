@@ -9,8 +9,8 @@ export default function Hero() {
     <section id="hero" className="bg-[#f5f4f0]" style={{ paddingTop: "82px" }}>
 
       {/* Sub-nav */}
-      <div className="border-b border-black/8" style={{ width: "100%", boxSizing: "border-box", overflowX: "hidden" }}>
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", flexWrap: "wrap", gap: "12px", padding: "8px 16px", width: "100%", boxSizing: "border-box" }}>
+      <div className="border-b border-black/8" style={{ width: "100%", boxSizing: "border-box", overflowX: "hidden", height: "36px", display: "flex", alignItems: "center" }}>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", flexWrap: "wrap", gap: "12px", padding: "0 16px", width: "100%", boxSizing: "border-box" }}>
           {[
             { label: "Take Car Convoyage", href: "#hero" },
             { label: "Services", href: "#services" },
