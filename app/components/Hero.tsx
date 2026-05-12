@@ -10,7 +10,7 @@ export default function Hero() {
 
       {/* Sub-nav */}
       <div className="border-b border-black/8">
-        <div className="section-inner max-w-7xl mx-auto flex items-center gap-8 py-3 overflow-x-auto whitespace-nowrap">
+        <div className="section-inner max-w-7xl mx-auto flex items-center gap-6 py-2 overflow-x-auto whitespace-nowrap">
           {[
             { label: "Take Car Convoyage", href: "#hero" },
             { label: "Services", href: "#services" },

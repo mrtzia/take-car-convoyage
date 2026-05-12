@@ -89,8 +89,8 @@ export default function Navbar() {
             <a
               href="#devis"
               onClick={() => setMenuOpen(false)}
-              className="bg-white text-[#111111] text-sm font-semibold rounded-full text-center"
-              style={{ padding: "12px 32px" }}
+              className="bg-white text-[#111111] text-sm font-semibold rounded-full text-center block"
+              style={{ padding: "12px 16px", marginLeft: "4px", marginRight: "4px" }}
             >
               Demander un devis
             </a>
