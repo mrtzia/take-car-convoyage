@@ -9,8 +9,8 @@ export default function Hero() {
     <section id="hero" className="bg-[#f5f4f0]" style={{ paddingTop: "82px" }}>
 
       {/* Sub-nav */}
-      <div className="border-b border-black/8">
-        <div className="max-w-7xl mx-auto px-4 flex items-center gap-8 py-3 overflow-x-auto whitespace-nowrap">
+      <div className="border-b border-black/8" style={{ overflowX: "hidden" }}>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "10px 16px", gap: "8px" }}>
           {[
             { label: "Take Car Convoyage", href: "#hero" },
             { label: "Services", href: "#services" },
@@ -19,7 +19,8 @@ export default function Hero() {
             { label: "Contact", href: "#contact" },
           ].map((item) => (
             <a key={item.label} href={item.href}
-              className="text-xs text-[#111111]/45 hover:text-[#111111] transition-colors shrink-0">
+              style={{ fontSize: "9px", color: "rgba(17,17,17,0.45)", whiteSpace: "nowrap" }}
+              className="hover:text-[#111111] transition-colors">
               {item.label}
             </a>
           ))}
