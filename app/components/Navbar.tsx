@@ -74,7 +74,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="section-inner md:hidden bg-[#111111] border-t border-white/10 py-5 flex flex-col gap-4"
+            className="section-inner md:hidden bg-[#111111] border-t border-white/10 py-4 flex flex-col gap-3"
           >
             {links.map((l) => (
               <a
