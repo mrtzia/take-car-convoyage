@@ -80,6 +80,7 @@ export default function HowItWorks() {
 
   // Smooth car x position (0–100)
   const carX = useMotionValue(0);
+  const carLeft = useTransform(carX, (v) => `calc(${v}% - 18px)`);
 
   useEffect(() => {
     if (!inView) return;
@@ -137,7 +138,6 @@ export default function HowItWorks() {
               viewBox="0 0 1000 90"
               className="absolute inset-0 w-full h-full"
               preserveAspectRatio="none"
-              style={{ overflow: "visible" }}
             >
               {/* Route fond gris clair */}
               <path
@@ -176,7 +176,7 @@ export default function HowItWorks() {
             <motion.div
               className="absolute"
               style={{
-                left: useTransform(carX, (v) => `calc(${v}% - 18px)`),
+                left: carLeft,
                 top: "50%",
                 translateY: "-50%",
                 zIndex: 10,
