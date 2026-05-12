@@ -106,7 +106,7 @@ export default function Hero() {
         {/* ── Right col — Map ── */}
         <motion.div
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7, delay: 0.2 }}
-          className="hidden md:block relative"
+          className="hidden md:block relative h-full"
         >
           <MapLeaflet />
         </motion.div>
