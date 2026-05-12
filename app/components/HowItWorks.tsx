@@ -102,27 +102,38 @@ export default function HowItWorks() {
 
   return (
     /* Outer: tall enough to drive 4 scroll steps */
-    <div ref={containerRef} id="comment" style={{ height: `${steps.length * 90}vh` }}>
+    <div
+      ref={containerRef}
+      id="comment"
+      style={{ height: `${steps.length * 90}vh`, overflow: "hidden" }}
+    >
 
       {/* Sticky viewport */}
       <div
         className="sticky top-0 overflow-hidden bg-[#f5f4f0]"
-        style={{ height: "100vh" }}
+        style={{ height: "100vh", minHeight: "100vh" }}
       >
         {/* ─── Big watermark numbers (all rendered, crossfade) ─── */}
-        <div className="absolute inset-0 pointer-events-none select-none overflow-hidden">
+        <div
+          className="absolute inset-0 pointer-events-none select-none overflow-hidden"
+          style={{ zIndex: 0 }}
+        >
           {steps.map((step, i) => (
             <motion.span
               key={step.number}
               animate={{ opacity: i === current ? 1 : 0 }}
               transition={{ duration: 0.5 }}
-              className="absolute right-0 bottom-0 font-bold text-[#111111] leading-none"
+              className="absolute font-bold leading-none"
               style={{
-                fontSize: "clamp(10rem, 28vw, 22rem)",
+                right: "-2vw",
+                bottom: "-4vh",
+                fontSize: "clamp(8rem, 22vw, 18rem)",
                 opacity: 0,
                 letterSpacing: "-0.05em",
-                lineHeight: 0.85,
-                color: "rgba(17,17,17,0.045)",
+                lineHeight: 0.8,
+                color: "rgba(17,17,17,0.05)",
+                maxWidth: "60vw",
+                zIndex: 0,
               }}
             >
               {step.number}
