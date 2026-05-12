@@ -27,7 +27,7 @@ export default function Hero() {
       </div>
 
       {/* Main grid */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2" style={{ paddingLeft: "clamp(24px, 5vw, 32px)", paddingRight: "clamp(24px, 5vw, 32px)" }}>
+      <div className="section-inner max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2">
 
         {/* ── Left col ── */}
         <div className="flex flex-col justify-between py-10 md:pl-6 md:pr-14 md:py-14" style={{ minHeight: "calc(100vh - 108px)" }}>

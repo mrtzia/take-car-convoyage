@@ -36,7 +36,7 @@ export default function HowItWorks() {
 
   return (
     <section id="comment" className="bg-[#f5f4f0]" style={{ paddingTop: "96px", paddingBottom: "96px" }}>
-      <div className="max-w-6xl mx-auto" ref={ref} style={{ paddingLeft: "clamp(24px, 5vw, 80px)", paddingRight: "clamp(24px, 5vw, 80px)" }}>
+      <div className="section-inner max-w-6xl mx-auto" ref={ref}>
 
         {/* Header */}
         <motion.div

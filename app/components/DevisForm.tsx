@@ -165,7 +165,7 @@ export default function DevisForm() {
 
   return (
     <section id="devis" className="bg-white" style={{ paddingTop: "60px", paddingBottom: "60px" }}>
-      <div className="max-w-5xl mx-auto" ref={ref} style={{ paddingLeft: "clamp(24px, 5vw, 80px)", paddingRight: "clamp(24px, 5vw, 80px)" }}>
+      <div className="section-inner max-w-5xl mx-auto" ref={ref}>
 
         {/* Header */}
         <motion.div
