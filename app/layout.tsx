@@ -8,6 +8,10 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
   title: "Take Car Convoyage – Convoyage & Rapatriement Automobile | Devis Gratuit",
   description: "Service de convoyage et rapatriement automobile en France et depuis l'Europe. Pour particuliers et professionnels. Réponse sous 24h, devis gratuit et sans engagement.",
   keywords: [
