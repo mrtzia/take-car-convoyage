@@ -27,10 +27,10 @@ export default function Hero() {
       </div>
 
       {/* Main grid */}
-      <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2">
+      <div className="max-w-7xl mx-auto px-6 sm:px-10 grid grid-cols-1 md:grid-cols-2">
 
         {/* ── Left col ── */}
-        <div className="flex flex-col justify-between py-10 px-4 sm:px-8 md:pl-12 md:pr-14 md:py-14" style={{ minHeight: "calc(100vh - 108px)" }}>
+        <div className="flex flex-col justify-between py-10 md:pl-6 md:pr-14 md:py-14" style={{ minHeight: "calc(100vh - 108px)" }}>
 
           {/* HAUT : badge + titre + phrase + bouton */}
           <div>
@@ -105,8 +105,7 @@ export default function Hero() {
         {/* ── Right col — Map ── */}
         <motion.div
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7, delay: 0.2 }}
-          className="relative w-full"
-          style={{ height: "300px", minHeight: "300px" }}
+          className="hidden md:block relative"
         >
           <MapLeaflet />
         </motion.div>
