@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import KeyStats from "./components/KeyStats";
 import Services from "./components/Services";
 import HowItWorks from "./components/HowItWorks";
 import DevisForm from "./components/DevisForm";
@@ -11,6 +12,7 @@ export default function Home() {
     <main>
       <Navbar />
       <Hero />
+      <KeyStats />
       <Services />
       <HowItWorks />
       <DevisForm />
