@@ -22,8 +22,8 @@ export default function Navbar() {
           <Image
             src="/logo.png"
             alt="Take Car Convoyage"
-            width={58}
-            height={58}
+            width={44}
+            height={44}
             className="object-contain flex-shrink-0"
           />
           <span className="text-white font-bold text-lg tracking-tight whitespace-nowrap">

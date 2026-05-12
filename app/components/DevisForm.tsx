@@ -165,7 +165,7 @@ export default function DevisForm() {
 
   return (
     <section id="devis" className="bg-white" style={{ paddingTop: "60px", paddingBottom: "60px" }}>
-      <div className="max-w-5xl mx-auto" ref={ref} style={{ paddingLeft: "80px", paddingRight: "80px" }}>
+      <div className="max-w-5xl mx-auto px-4 sm:px-8 md:px-20" ref={ref}>
 
         {/* Header */}
         <motion.div
@@ -175,11 +175,11 @@ export default function DevisForm() {
           style={{ marginBottom: "32px" }}
         >
           <p className="text-[#111111]/35 text-xs uppercase tracking-[0.2em]" style={{ marginBottom: "8px" }}>Devis gratuit</p>
-          <div className="flex items-end justify-between gap-6">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-2 md:gap-6">
             <h2 className="text-3xl md:text-4xl font-bold leading-tight text-[#111111]">
               Obtenez votre tarif en 24h.
             </h2>
-            <p className="text-[#111111]/40 text-sm shrink-0">Sans engagement. Réponse garantie sous 24 heures.</p>
+            <p className="text-[#111111]/40 text-sm md:shrink-0">Sans engagement. Réponse garantie sous 24 heures.</p>
           </div>
         </motion.div>
 
@@ -209,7 +209,7 @@ export default function DevisForm() {
             className="flex flex-col gap-3"
           >
             {/* Ligne 1 : Nom + Email + Téléphone */}
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               <div className="flex flex-col gap-1.5">
                 <label className="text-[#111111]/50 text-xs uppercase tracking-widest">Nom complet</label>
                 <input required name="nom" type="text" placeholder="Jean Dupont" className={inputClass} style={inputStyle} />
@@ -245,7 +245,7 @@ export default function DevisForm() {
             </div>
 
             {/* Ligne 2 : Vous êtes + Lieu */}
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div className="flex flex-col gap-1.5">
                 <label className="text-[#111111]/50 text-xs uppercase tracking-widest">Vous êtes</label>
                 <select required name="type" className={inputClass} style={inputStyle}>
