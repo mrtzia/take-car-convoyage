@@ -9,7 +9,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="bg-[#111111]" style={{ paddingTop: "60px", paddingBottom: "60px" }} ref={ref}>
-      <div style={{ paddingLeft: "80px", paddingRight: "80px" }}>
+      <div className="max-w-6xl mx-auto px-6 sm:px-10 md:px-20">
 
         {/* Header */}
         <motion.div

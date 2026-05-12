@@ -36,7 +36,7 @@ export default function Services() {
 
   return (
     <section id="services" className="bg-white" style={{ paddingTop: "96px", paddingBottom: "96px" }}>
-      <div className="max-w-6xl mx-auto px-8" ref={ref} style={{ paddingLeft: "80px" }}>
+      <div className="max-w-6xl mx-auto px-6 sm:px-10 md:px-20" ref={ref}>
 
         {/* Header */}
         <motion.div
