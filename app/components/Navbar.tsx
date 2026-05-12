@@ -15,7 +15,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 bg-[#111111] overflow-visible" style={{ zIndex: 9999 }}>
-      <div className="flex items-center justify-between pl-3 pr-6 py-0">
+      <div className="section-inner flex items-center justify-between py-0">
 
         {/* Logo + Nom */}
         <a href="#hero" className="flex items-center gap-3 py-2">
